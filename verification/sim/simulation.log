@@ -1,0 +1,533 @@
+Command: /home/users15/mu832615/ECE698C/addressing_implmentation/verification/sim/./simv +UVM_TESTNAME=reg_file_test +UVM_VERBOSITY=UVM_NONE +FORCE_PREADY_DOWN -l simulation.log
+Chronologic VCS simulator copyright 1991-2026
+Contains Synopsys proprietary information.
+Compiler version Y-2026.03-SP1_Full64; Runtime version Y-2026.03-SP1_Full64;  Oct 25 00:12 2026
+UVM_INFO /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/base/uvm_root.svh(407) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+VCD+ Writer Y-2026.03-SP1_Full64 Copyright (c) 1991-2026 by Synopsys Inc.
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `init_control_status` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1396) @ 0: reporter [RegModel] No backdoor access available for field 'reg_blk.init_control_status.control' . Using frontdoor instead.
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 0: reporter [RegModel] Individual field access not available for field 'reg_blk.init_control_status.control'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 145: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(25) @ 145: reporter@@m_sequence [reg_file_sequence] Wrote init_control: e, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 145: reporter [RegModel] Individual field access not available for field 'reg_blk.init_control_status.control'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 235: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(29) @ 235: reporter@@m_sequence [reg_file_sequence] Read init_control: 0, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 235: reporter [RegModel] Individual field access not available for field 'reg_blk.init_control_status.status'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 325: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(35) @ 325: reporter@@m_sequence [reg_file_sequence] Wrote init_status: b, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 325: reporter [RegModel] Individual field access not available for field 'reg_blk.init_control_status.status'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 415: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(39) @ 415: reporter@@m_sequence [reg_file_sequence] Read init_status: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 505: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(44) @ 505: reporter@@m_sequence [reg_file_sequence] Wrote init_data: a0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 595: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(49) @ 595: reporter@@m_sequence [reg_file_sequence] Read init_data: 0, Read init_status: 0, Read init_control: 0,  status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 685: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(52) @ 685: reporter@@m_sequence [reg_file_sequence] Read init_data: 0, Read init_status: 0, Read init_control: 0,  status: UVM_NOT_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `mode_control_status` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 775: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(63) @ 775: reporter@@m_sequence [reg_file_sequence] Wrote mode_control register: bda1, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 865: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(66) @ 865: reporter@@m_sequence [reg_file_sequence] Read mode_data: 0, Read mode_status: 0, Read mode_control: 0,  status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 955: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(69) @ 955: reporter@@m_sequence [reg_file_sequence] Read mode_data: 0, Read mode_status: 0, Read mode_control: 0,  status: UVM_NOT_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `interrupt_control` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 1045: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(81) @ 1045: reporter@@m_sequence [reg_file_sequence] Wrote int_enable_ctrl: 3, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 1045: reporter [RegModel] Individual field access not available for field 'reg_blk.interrupt_control.control'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 1135: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(85) @ 1135: reporter@@m_sequence [reg_file_sequence] Read int_enable_ctrl: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 1225: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(91) @ 1225: reporter@@m_sequence [reg_file_sequence] Wrote int_status: 1, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 1225: reporter [RegModel] Individual field access not available for field 'reg_blk.interrupt_control.status'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 1315: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(95) @ 1315: reporter@@m_sequence [reg_file_sequence] Read int_status: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 1405: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(101) @ 1405: reporter@@m_sequence [reg_file_sequence] Wrote int_data: 5, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 1405: reporter [RegModel] Individual field access not available for field 'reg_blk.interrupt_control.data'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 1495: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(105) @ 1495: reporter@@m_sequence [reg_file_sequence] Read int_data: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 1585: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(108) @ 1585: reporter@@m_sequence [reg_file_sequence] Read int_enable_ctrl: 0, Read int_status: 0, Read int_data: 0,  status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 1675: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(112) @ 1675: reporter@@m_sequence [reg_file_sequence] Read int_enable_ctrl: 0, Read int_status: 0, Read int_data: 0,  status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 1765: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(115) @ 1765: reporter@@m_sequence [reg_file_sequence] Read int_enable_ctrl: 0, Read int_status: 0, Read int_data: 0,  status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 1855: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(118) @ 1855: reporter@@m_sequence [reg_file_sequence] Read int_enable_ctrl: 0, Read int_status: 0, Read int_data: 0,  status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 1945: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(122) @ 1945: reporter@@m_sequence [reg_file_sequence] Read int_enable_ctrl: 0, Read int_status: 0, Read int_data: 0,  status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 2035: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(125) @ 2035: reporter@@m_sequence [reg_file_sequence] Read int_enable_ctrl: 0, Read int_status: 0, Read int_data: 0,  status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 2125: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(128) @ 2125: reporter@@m_sequence [reg_file_sequence] Read int_enable_ctrl: 0, Read int_status: 0, Read int_data: 0,  status: UVM_NOT_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `power_control_status` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 2125: reporter [RegModel] Individual field access not available for field 'reg_blk.power_control_status.control'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 2215: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1707) @ 2215: reporter [RegModel] Reading field 'reg_blk.power_control_status.control' will cause unintended side effects in adjoining Read-to-Clear or Read-to-Set fields in the same register
+UVM_INFO ../sequence/reg_file_sequence.sv(138) @ 2215: reporter@@m_sequence [reg_file_sequence] Read power_ctrl: 0, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 2215: reporter [RegModel] Individual field access not available for field 'reg_blk.power_control_status.control'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 2305: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(143) @ 2305: reporter@@m_sequence [reg_file_sequence] Wrote power_ctrl: 1111, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 2305: reporter [RegModel] Individual field access not available for field 'reg_blk.power_control_status.control'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 2395: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1707) @ 2395: reporter [RegModel] Reading field 'reg_blk.power_control_status.control' will cause unintended side effects in adjoining Read-to-Clear or Read-to-Set fields in the same register
+UVM_INFO ../sequence/reg_file_sequence.sv(147) @ 2395: reporter@@m_sequence [reg_file_sequence] Read power_ctrl: 0, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 2395: reporter [RegModel] Individual field access not available for field 'reg_blk.power_control_status.status'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 2485: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(152) @ 2485: reporter@@m_sequence [reg_file_sequence] Wrote power_status: 1, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 2485: reporter [RegModel] Individual field access not available for field 'reg_blk.power_control_status.status'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 2575: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1707) @ 2575: reporter [RegModel] Reading field 'reg_blk.power_control_status.status' will cause unintended side effects in adjoining Read-to-Clear or Read-to-Set fields in the same register
+UVM_INFO ../sequence/reg_file_sequence.sv(156) @ 2575: reporter@@m_sequence [reg_file_sequence] Read power_status: 0, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 2575: reporter [RegModel] Individual field access not available for field 'reg_blk.power_control_status.data'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 2665: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(161) @ 2665: reporter@@m_sequence [reg_file_sequence] Wrote power_data: 45, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 2665: reporter [RegModel] Individual field access not available for field 'reg_blk.power_control_status.data'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 2755: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(165) @ 2755: reporter@@m_sequence [reg_file_sequence] Read power_data: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 2845: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(170) @ 2845: reporter@@m_sequence [reg_file_sequence] Read power_ctrl: 0, Read power_status: 0, Read power_data: 0, Read Counter: 0,  status: UVM_NOT_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `reset_control_status` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 2845: reporter [RegModel] Individual field access not available for field 'reg_blk.reset_control_status.control'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 2935: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(182) @ 2935: reporter@@m_sequence [reg_file_sequence] Read reset_ctrl: 0, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 2935: reporter [RegModel] Individual field access not available for field 'reg_blk.reset_control_status.control'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 3025: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(187) @ 3025: reporter@@m_sequence [reg_file_sequence] Wrote reset_ctrl: 0, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 3025: reporter [RegModel] Individual field access not available for field 'reg_blk.reset_control_status.control'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 3115: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(191) @ 3115: reporter@@m_sequence [reg_file_sequence] Read reset_ctrl: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 3205: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(197) @ 3205: reporter@@m_sequence [reg_file_sequence] Wrote reset_status: 5, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 3205: reporter [RegModel] Individual field access not available for field 'reg_blk.reset_control_status.status'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 3295: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(201) @ 3295: reporter@@m_sequence [reg_file_sequence] Read reset_status: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 3385: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(207) @ 3385: reporter@@m_sequence [reg_file_sequence] Wrote reset_data: 1b, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 3385: reporter [RegModel] Individual field access not available for field 'reg_blk.reset_control_status.data'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 3475: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(211) @ 3475: reporter@@m_sequence [reg_file_sequence] Read reset_data: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 3565: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(215) @ 3565: reporter@@m_sequence [reg_file_sequence] Read reset_ctrl: 0, Read reset_status: 0, Read reset_data: 0,  status: UVM_NOT_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `transmit_control_status` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 3655: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(227) @ 3655: reporter@@m_sequence [reg_file_sequence] Wrote tx_ctrl: d, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 3655: reporter [RegModel] Individual field access not available for field 'reg_blk.transmit_control_status.control'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 3745: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(231) @ 3745: reporter@@m_sequence [reg_file_sequence] Read tx_ctrl: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 3835: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(237) @ 3835: reporter@@m_sequence [reg_file_sequence] Wrote tx_status: e, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 3835: reporter [RegModel] Individual field access not available for field 'reg_blk.transmit_control_status.status'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 3925: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(241) @ 3925: reporter@@m_sequence [reg_file_sequence] Read tx_status: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 4015: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(247) @ 4015: reporter@@m_sequence [reg_file_sequence] Wrote tx_data: 59, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 4015: reporter [RegModel] Individual field access not available for field 'reg_blk.transmit_control_status.data'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 4105: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(251) @ 4105: reporter@@m_sequence [reg_file_sequence] Read tx_data: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 4195: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(256) @ 4195: reporter@@m_sequence [reg_file_sequence] Read tx_ctrl: 0, Read tx_status: 0, Read tx_data: 0,  status: UVM_NOT_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `csr_reg` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 4285: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(270) @ 4285: reporter@@m_sequence [reg_file_sequence] Wrote csr_control: c, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 4285: reporter [RegModel] Individual field access not available for field 'reg_blk.csr_reg.control'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 4375: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(274) @ 4375: reporter@@m_sequence [reg_file_sequence] Read csr_control: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 4465: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(280) @ 4465: reporter@@m_sequence [reg_file_sequence] Wrote csr_status: f, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 4465: reporter [RegModel] Individual field access not available for field 'reg_blk.csr_reg.status'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 4555: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(284) @ 4555: reporter@@m_sequence [reg_file_sequence] Read csr_status: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 4645: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(290) @ 4645: reporter@@m_sequence [reg_file_sequence] Wrote csr_data: e8, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 4645: reporter [RegModel] Individual field access not available for field 'reg_blk.csr_reg.data'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 4735: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(294) @ 4735: reporter@@m_sequence [reg_file_sequence] Read csr_data: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 4825: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(297) @ 4825: reporter@@m_sequence [reg_file_sequence] Read csr_control: 0, Read csr_status: 0, Read csr_data: 0,  status: UVM_NOT_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `conf_reg` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 4915: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(310) @ 4915: reporter@@m_sequence [reg_file_sequence] Wrote conf_control: 5, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 4915: reporter [RegModel] Individual field access not available for field 'reg_blk.conf_reg.control'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 5005: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(314) @ 5005: reporter@@m_sequence [reg_file_sequence] Read conf_control: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 5095: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(320) @ 5095: reporter@@m_sequence [reg_file_sequence] Wrote conf_status: 5, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 5095: reporter [RegModel] Individual field access not available for field 'reg_blk.conf_reg.status'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 5185: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(324) @ 5185: reporter@@m_sequence [reg_file_sequence] Read conf_status: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 5275: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(330) @ 5275: reporter@@m_sequence [reg_file_sequence] Wrote conf_data: 42, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 5275: reporter [RegModel] Individual field access not available for field 'reg_blk.conf_reg.data'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 5365: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(334) @ 5365: reporter@@m_sequence [reg_file_sequence] Read conf_data: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 5455: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(339) @ 5455: reporter@@m_sequence [reg_file_sequence] Read conf_control: 0, Read conf_status: 0, Read conf_data: 0,  status: UVM_NOT_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `sys_stat_reg` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 5545: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(350) @ 5545: reporter@@m_sequence [reg_file_sequence] Wrote sys_stat_control: 8, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 5545: reporter [RegModel] Individual field access not available for field 'reg_blk.sys_stat_reg.control'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 5635: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(354) @ 5635: reporter@@m_sequence [reg_file_sequence] Read sys_stat_control: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 5725: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(360) @ 5725: reporter@@m_sequence [reg_file_sequence] Wrote sys_stat_status: f, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 5725: reporter [RegModel] Individual field access not available for field 'reg_blk.sys_stat_reg.status'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 5815: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(364) @ 5815: reporter@@m_sequence [reg_file_sequence] Read sys_stat_status: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 5905: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(370) @ 5905: reporter@@m_sequence [reg_file_sequence] Wrote sys_stat_data: ce, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 5905: reporter [RegModel] Individual field access not available for field 'reg_blk.sys_stat_reg.data'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 5995: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(374) @ 5995: reporter@@m_sequence [reg_file_sequence] Read sys_stat_data: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 6085: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(379) @ 6085: reporter@@m_sequence [reg_file_sequence] Read sys_stat_control: 0, Read sys_stat_status: 0, Read sys_stat_data: 0,  status: UVM_NOT_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `int_reg` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 6175: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(392) @ 6175: reporter@@m_sequence [reg_file_sequence] Wrote int_control: d, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 6175: reporter [RegModel] Individual field access not available for field 'reg_blk.int_reg.control'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 6265: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(396) @ 6265: reporter@@m_sequence [reg_file_sequence] Read int_control: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 6355: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(402) @ 6355: reporter@@m_sequence [reg_file_sequence] Wrote int_status: d, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 6355: reporter [RegModel] Individual field access not available for field 'reg_blk.int_reg.status'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 6445: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(406) @ 6445: reporter@@m_sequence [reg_file_sequence] Read int_status: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 6535: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(412) @ 6535: reporter@@m_sequence [reg_file_sequence] Wrote int_data: c6, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 6535: reporter [RegModel] Individual field access not available for field 'reg_blk.int_reg.data'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 6625: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(416) @ 6625: reporter@@m_sequence [reg_file_sequence] Read int_data: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 6715: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(420) @ 6715: reporter@@m_sequence [reg_file_sequence] Read int_control: 0, Read int_status: 0, Read int_data: 0,  status: UVM_NOT_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `cntrl_reg` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 6805: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(432) @ 6805: reporter@@m_sequence [reg_file_sequence] Wrote cntrl_control: 6, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 6805: reporter [RegModel] Individual field access not available for field 'reg_blk.cntrl_reg.control'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 6895: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(436) @ 6895: reporter@@m_sequence [reg_file_sequence] Read cntrl_control: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 6985: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(442) @ 6985: reporter@@m_sequence [reg_file_sequence] Wrote cntrl_status: a, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 6985: reporter [RegModel] Individual field access not available for field 'reg_blk.cntrl_reg.status'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 7075: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(446) @ 7075: reporter@@m_sequence [reg_file_sequence] Read cntrl_status: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 7165: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(453) @ 7165: reporter@@m_sequence [reg_file_sequence] Wrote cntrl_data: ab, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 7165: reporter [RegModel] Individual field access not available for field 'reg_blk.cntrl_reg.data'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 7255: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(457) @ 7255: reporter@@m_sequence [reg_file_sequence] Read cntrl_data: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 7345: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(461) @ 7345: reporter@@m_sequence [reg_file_sequence] Read cntrl_control: 0, Read cntrl_status: 0, Read cntrl_data: 0,  status: UVM_NOT_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `perf_reg` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 7435: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(473) @ 7435: reporter@@m_sequence [reg_file_sequence] Wrote perf_control: d, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 7435: reporter [RegModel] Individual field access not available for field 'reg_blk.perf_reg.control'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 7525: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(477) @ 7525: reporter@@m_sequence [reg_file_sequence] Read perf_control: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 7615: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(484) @ 7615: reporter@@m_sequence [reg_file_sequence] Wrote perf_status: 0, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 7615: reporter [RegModel] Individual field access not available for field 'reg_blk.perf_reg.status'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 7705: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(488) @ 7705: reporter@@m_sequence [reg_file_sequence] Read perf_status: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 7795: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(494) @ 7795: reporter@@m_sequence [reg_file_sequence] Wrote perf_data: 70, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 7795: reporter [RegModel] Individual field access not available for field 'reg_blk.perf_reg.data'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 7885: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(498) @ 7885: reporter@@m_sequence [reg_file_sequence] Read perf_data: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 7975: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(501) @ 7975: reporter@@m_sequence [reg_file_sequence] Read perf_control: 0, Read perf_status: 0, Read perf_data: 0, status: UVM_NOT_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `pm_reg` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 8065: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(513) @ 8065: reporter@@m_sequence [reg_file_sequence] Wrote pm_control: 8, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 8065: reporter [RegModel] Individual field access not available for field 'reg_blk.pm_reg.control'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 8155: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(517) @ 8155: reporter@@m_sequence [reg_file_sequence] Read pm_control: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 8245: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(524) @ 8245: reporter@@m_sequence [reg_file_sequence] Wrote pm_status: 7, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 8245: reporter [RegModel] Individual field access not available for field 'reg_blk.pm_reg.status'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 8335: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(528) @ 8335: reporter@@m_sequence [reg_file_sequence] Read pm_status: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 8425: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(534) @ 8425: reporter@@m_sequence [reg_file_sequence] Wrote pm_data: 1, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 8425: reporter [RegModel] Individual field access not available for field 'reg_blk.pm_reg.data'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 8515: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(538) @ 8515: reporter@@m_sequence [reg_file_sequence] Read pm_data: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 8605: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(541) @ 8605: reporter@@m_sequence [reg_file_sequence] Read pm_control: 0, Read pm_status: 0, Read pm_data: 0, status: UVM_NOT_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `dbg_reg` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 8695: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(553) @ 8695: reporter@@m_sequence [reg_file_sequence] Wrote dbg_control: f, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 8695: reporter [RegModel] Individual field access not available for field 'reg_blk.dbg_reg.control'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 8785: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(557) @ 8785: reporter@@m_sequence [reg_file_sequence] Read dbg_control: 0, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 8785: reporter [RegModel] Individual field access not available for field 'reg_blk.dbg_reg.status'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 8875: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(561) @ 8875: reporter@@m_sequence [reg_file_sequence] Read dbg_status: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 8965: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(567) @ 8965: reporter@@m_sequence [reg_file_sequence] Wrote dbg_data: 69, status: UVM_NOT_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 8965: reporter [RegModel] Individual field access not available for field 'reg_blk.dbg_reg.data'. Accessing complete register instead.
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 9055: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(571) @ 9055: reporter@@m_sequence [reg_file_sequence] Read dbg_data: 0, status: UVM_NOT_OK
+
+UVM_ERROR ../driver/reg_file_driver.sv(68) @ 9145: uvm_test_top.m_env.m_agent.m_driver [TIMEOUT] APB transaction timed out after 6 cycles
+
+UVM_INFO ../sequence/reg_file_sequence.sv(574) @ 9145: reporter@@m_sequence [reg_file_sequence] Read dbg_control: 0, Read dbg_status: 0, Read dbg_data: 0, status: UVM_NOT_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `err_reg` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_FATAL /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/base/uvm_phase.svh(1495) @ 9200: reporter [PH_TIMEOUT] Default timeout of 9200 hit, indicating a probable testbench issue
+$finish called from file "/opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/base/uvm_root.svh", line 138.
+$finish at simulation time                 9200
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 9200
+CPU Time:      0.690 seconds;       Data structure size:   0.6Mb
+Sun Oct 25 00:12:20 2026

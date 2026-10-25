@@ -1,0 +1,487 @@
+addrmap expanded_regfile {
+    // init Control and Status Register 
+    reg {
+        field {
+            sw = rw;
+            hw = r;
+            reset = 0;
+            desc = "Control field for system initialization";
+            name = "init_ctrl";
+        } control[3:0];
+
+        field {
+            sw = r;
+            hw = w;
+            reset = 0;
+            desc = "Status field for initialization status";
+            name = "init_status";
+        } status[7:4];
+
+        field {
+            sw = rw;
+            hw = r;
+            reset = 0;
+            desc = "Data field for initialization data";
+            name = "init_data";
+        } data[15:8];
+    } init_control_status @ 0x00;
+
+    // mode Control and Status Register 
+    reg {
+
+        default rclr; // Reading clears the register
+
+       field {
+            sw = rw;
+            hw = r;
+            reset = 0;
+            desc = "Control field for system mode";
+            name = "mode_ctrl";
+        } control[3:0];
+
+        field {
+            sw = r;
+            hw = w;
+            reset = 0;
+            desc = "Status field for system mode";
+            name = "mode_status";
+        } status[7:4];
+
+        field {
+            sw = rw;
+            hw = r;
+            reset = 0;
+            desc = "Data field for mode configuration";
+            name = "mode_data";
+        } data[15:8];
+    } mode_control_status @ 0x04;
+
+    // Interrupt Control Register 
+    reg {
+        field {
+            sw = rw;
+            hw = r;
+            reset = 0;
+            desc = "Control field for interrupt enable";
+            name = "int_enable_ctrl";
+        } control[3:0];
+
+        field {
+            sw = r;
+            hw = w;
+            reset = 0;
+            desc = "Interrupt status";
+            name = "int_status";
+        } status[7:4];
+
+        field {
+            sw = rw;
+            hw = rw;
+	        we; // hardware has write-enable control.
+            reset = 0;
+            desc = "Interrupt data";
+            name = "int_data";
+        } data[15:8];
+    } interrupt_control @ 0x08;
+
+    // Power Control Status Register
+    reg {
+        field {
+            sw = rw;
+            hw = r;
+            onwrite = woclr;
+            reset = 5;
+            desc = "Power control configuration";
+            name = "power_ctrl";
+        } control[3:0];
+
+        field {
+            sw = wr;
+            hw = r;
+            reset = 0;
+            desc = "Power status";
+            name = "power_status";
+        } status[4:4];  
+
+        field {
+            sw = r;
+            hw = w;
+            we; // hardware has write-enable control.
+            reset = 0;
+            desc = "Counter for RTL";
+            name = "counter";
+            counter; 
+            incrvalue = 1; // Set the increment value   
+        } counter[8:5];
+
+        field {
+            sw = rw;
+            hw = r;
+            reset = 0;
+            desc = "Power-related data";
+            name = "power_data";
+            onread = rclr;
+        } data[15:9];
+    } power_control_status @ 0x0C;
+
+ 
+    reg {
+        field {
+            sw = rw;
+            hw = r;
+            onwrite = wzc;
+            reset = 5;
+            desc = "Control field for system reset";
+            name = "reset_ctrl";
+        } control[3:0];
+
+        field {
+            sw = r;
+            hw = w;
+            reset = 0;
+            desc = "Reset status";
+            name = "reset_status";
+        } status[7:4];
+
+        field {
+            sw = rw;
+            hw = rw;
+            we; // hardware has write-enable control.
+            reset = 0;
+            desc = "Reset data";
+            name = "reset_data";
+        } data[15:8];
+    } reset_control_status @ 0x10;
+
+    // Register for data transmission control
+    reg {
+        field {
+            sw = rw;
+            hw = r;
+            reset = 0;
+            desc = "Transmit control configuration";
+            name = "tx_ctrl";
+        } control[3:0];
+
+        field {
+            sw = r;
+            hw = w;
+            reset = 0;
+            desc = "Transmit status";
+            name = "tx_status";
+        } status[7:4];
+
+        field {
+            sw = rw;
+            hw = rw;
+            we; // hardware has write-enable control.
+            reset = 0;
+            desc = "Transmit data";
+            name = "tx_data";
+        } data[15:8];
+    } transmit_control_status @ 0x14;
+
+// Control and Status Register (CSR)
+reg {
+    field {
+        sw = rw;
+        hw = r;
+        reset = 0;
+        desc = "Control field for CSR";
+        name = "csr_control";
+    } control[3:0];
+
+    field {
+        sw = r;
+        hw = w;
+        reset = 0;
+        desc = "Status field for CSR";
+        name = "csr_status";
+    } status[7:4];
+
+    field {
+        sw = rw;
+        hw = rw;
+        we; // hardware has write-enable control.
+        reset = 0;
+        desc = "Data field for CSR";
+        name = "csr_data";
+    } data[15:8];
+} csr_reg [6] @0x100 += 0x10; 
+// Address 0x100 to 0x103, 0x110 to 0x113,...
+
+// Configuration Register (CONF)
+reg {
+    field {
+        sw = rw;
+        hw = r;
+        reset = 0;
+        desc = "Control field for CONF";
+        name = "conf_control";
+    } control[3:0];
+
+    field {
+        sw = r;
+        hw = w;
+        reset = 0;
+        desc = "Status field for CONF";
+        name = "conf_status";
+    } status[7:4];
+
+    field {
+        sw = rw;
+        hw = rw;
+        we; // hardware has write-enable control.
+        reset = 0;
+        desc = "Data field for CONF";
+        name = "conf_data";
+    } data[15:8];
+} conf_reg @ 0x1C;
+
+// System Status Register (SYS_STAT)
+reg {
+    field {
+        sw = rw;
+        hw = r;
+        reset = 0;
+        desc = "Control field for SYS_STAT";
+        name = "sys_stat_control";
+    } control[3:0];
+
+    field {
+        sw = r;
+        hw = w;
+        reset = 0;
+        desc = "Status field for SYS_STAT";
+        name = "sys_stat_status";
+    } status[7:4];
+
+    field {
+        sw = rw;
+        hw = rw;
+        we; // hardware has write-enable control.
+        reset = 0;
+        desc = "Data field for SYS_STAT";
+        name = "sys_stat_data";
+    } data[15:8];
+} sys_stat_reg @ 0x20;
+
+// Interrupt Register (INT)
+reg {
+    field {
+        sw = rw;
+        hw = r;
+        reset = 0;
+        desc = "Control field for INT";
+        name = "int_control";
+    } control[3:0];
+
+    field {
+        sw = r;
+        hw = w;
+        reset = 0;
+        desc = "Status field for INT";
+        name = "int_status";
+    } status[7:4];
+
+    field {
+        sw = rw;
+        hw = rw;
+        we; // hardware has write-enable control.
+        reset = 0;
+        desc = "Data field for INT";
+        name = "int_data";
+    } data[15:8];
+} int_reg @ 0x24;
+
+// Configuration and Control Register (CNTRL)
+reg {
+    field {
+        sw = rw;
+        hw = r;
+        reset = 0;
+        desc = "Control field for CNTRL";
+        name = "cntrl_control";
+    } control[3:0];
+
+    field {
+        sw = r;
+        hw = w;
+        reset = 0;
+        desc = "Status field for CNTRL";
+        name = "cntrl_status";
+    } status[7:4];
+
+    field {
+        sw = rw;
+        hw = rw;
+        we; // hardware has write-enable control.
+        reset = 0;
+        desc = "Data field for CNTRL";
+        name = "cntrl_data";
+    } data[15:8];
+} cntrl_reg @ 0x28;
+
+// Performance Monitor Register (PERF)
+reg {
+    field {
+        sw = rw;
+        hw = r;
+        reset = 0;
+        desc = "Control field for PERF";
+        name = "perf_control";
+    } control[3:0];
+
+    field {
+        sw = r;
+        hw = w;
+        reset = 0;
+        desc = "Status field for PERF";
+        name = "perf_status";
+    } status[7:4];
+
+    field {
+        sw = rw;
+        hw = r;
+        reset = 0;
+        desc = "Data field for PERF";
+        name = "perf_data";
+    } data[15:8];
+} perf_reg @ 0x2C;
+
+// Power Management Register (PM)
+reg {
+    field {
+        sw = rw;
+        hw = r;
+        reset = 0;
+        desc = "Control field for PM";
+        name = "pm_control";
+    } control[3:0];
+
+    field {
+        sw = r;
+        hw = w;
+        reset = 0;
+        desc = "Status field for PM";
+        name = "pm_status";
+    } status[7:4];
+
+    field {
+        sw = rw;
+        hw = r;
+        reset = 0;
+        desc = "Data field for PM";
+        name = "pm_data";
+    } data[15:8];
+} pm_reg @ 0x30;
+
+// Debug Register (DBG)
+reg {
+    field {
+        sw = rw;
+        hw = r;
+        reset = 0;
+        desc = "Control field for DBG";
+        name = "dbg_control";
+    } control[3:0];
+
+    field {
+        sw = r;
+        hw = w;
+        reset = 0;
+        desc = "Status field for DBG";
+        name = "dbg_status";
+    } status[7:4];
+
+    field {
+        sw = rw;
+        hw = rw;
+        we; // hardware has write-enable control.
+        reset = 0;
+        desc = "Data field for DBG";
+        name = "dbg_data";
+    } data[15:8];
+} dbg_reg @ 0x34;
+
+// Error Register (ERR)
+reg {
+    field {
+        sw = rw;
+        hw = r;
+        reset = 0;
+        desc = "Control field for ERR";
+        name = "err_control";
+    } control[3:0];
+
+    field {
+        sw = r;
+        hw = w;
+        reset = 0;
+        desc = "Status field for ERR";
+        name = "err_status";
+    } status[7:4];
+
+    field {
+        sw = rw;
+        hw = rw;
+        we; // hardware has write-enable control.
+        reset = 0;
+        desc = "Data field for ERR";
+        name = "err_data";
+    } data[15:8];
+} err_reg @ 0x38;
+
+
+// FIFO Status Register (fifostatus)
+reg {
+    field {
+        sw = r;         // Read-only for software
+        hw = w;         // Written by hardware
+        reset = 0;
+        desc = "FIFO Empty status flag";
+        name = "empty_flag";
+    } empty[0:0];       // 1 bit for empty status
+
+    field {
+        sw = r;         // Read-only for software
+        hw = w;         // Written by hardware
+        reset = 0;
+        desc = "FIFO Full status flag";
+        name = "full_flag";
+    } full[1:1];        // 1 bit for full status
+
+    field {
+        sw = r;         // Read-only for software
+        hw = w;         // Written by hardware
+        reset = 0;
+        desc = "Valid data in FIFO flag";
+        name = "valid_data_flag";
+    } valid_data[2:2];  // 1 bit for valid data
+
+    field {
+        sw = rw;         // Read-only for software
+        hw = r;         // Written by hardware
+        reset = 0;
+        desc = "FIFO data content";
+        name = "fifo_data";
+    } data[15:3];       // 13 bits for FIFO data
+
+    field {
+        sw = rw;         // Read-only for software
+        hw = r;         // Reserved, no description
+        reset = 0;
+        desc = "Reserved bits";
+        name = "reserved";
+    } reserved[31:16];  // 16 bits reserved
+} fifostatus @ 0x3C;    // Address 0x3C
+
+} ;
+
+
+
+
+
+
+
+

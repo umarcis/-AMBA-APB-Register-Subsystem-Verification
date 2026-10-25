@@ -1,0 +1,28 @@
+#!/bin/sh -h 
+VCS_HOME="/opt/synopsys/vcs/Y-2026.03-SP1"
+VCS_ARCH_DIR=""
+if [ -x "${VCS_HOME}/bin/getsimarch" ]; then
+    VCS_ARCH_DIR=`${VCS_HOME}/bin/getsimarch 64`
+    if [ ! -x "${VCS_HOME}/${VCS_ARCH_DIR}/bin/vcsfind_create_index.exe" ]; then
+        VCS_ARCH_DIR=`${VCS_HOME}/bin/getsimarch`
+    fi
+fi
+if [ -x "${VCS_HOME}/${VCS_ARCH_DIR}/bin/vcsfind_create_index.exe" ]; then
+    RUNTIME_TOOL_HOME="${VCS_HOME}/${VCS_ARCH_DIR}"
+elif [ -x "${VCS_HOME}/bin/vcsfind_create_index.exe" ]; then
+    RUNTIME_TOOL_HOME="${VCS_HOME}"
+else
+    echo "ERROR: Cannot find vcsfind_create_index.exe for architecture ${VCS_ARCH_DIR}"
+    echo "Tried: ${VCS_HOME}/${VCS_ARCH_DIR}/bin/vcsfind_create_index.exe"
+    echo "       ${VCS_HOME}/bin/vcsfind_create_index.exe"
+    exit 1
+fi
+VCS_FSEARCH_SQL="${RUNTIME_TOOL_HOME}/bin/vcsfind_create_index.exe"
+PYTHONHOME=/opt/synopsys/vcs/Y-2026.03-SP1/etc/search/pyh
+export PYTHONHOME
+PYTHONPATH=${RUNTIME_TOOL_HOME}/lib/pylib27
+export PYTHONPATH
+LD_LIBRARY_PATH=${RUNTIME_TOOL_HOME}/lib:${RUNTIME_TOOL_HOME}/lib/pylib27
+export LD_LIBRARY_PATH
+${VCS_FSEARCH_SQL}  -z  "/home/users15/mu832615/ECE698C/addressing_implmentation/verification/sim/simv.daidir/debug_dump/fsearch/./idents_AVyFJM.xml.gz" "/home/users15/mu832615/ECE698C/addressing_implmentation/verification/sim/simv.daidir/debug_dump/fsearch/./idents_tapi.xml.gz" -o "/home/users15/mu832615/ECE698C/addressing_implmentation/verification/sim/simv.daidir/debug_dump/fsearch/fsearch.db_tmp"
+\mv "/home/users15/mu832615/ECE698C/addressing_implmentation/verification/sim/simv.daidir/debug_dump/fsearch/fsearch.db_tmp" "/home/users15/mu832615/ECE698C/addressing_implmentation/verification/sim/simv.daidir/debug_dump/fsearch/fsearch.db"
