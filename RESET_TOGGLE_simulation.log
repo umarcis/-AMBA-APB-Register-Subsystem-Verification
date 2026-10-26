@@ -1,0 +1,369 @@
+Command: /home/users15/mu832615/ECE698C/addressing_implmentation/verification/sim/./simv +UVM_TESTNAME=reg_file_test +UVM_VERBOSITY=UVM_NONE +RESET_TOGGLE -l simulation.log
+Chronologic VCS simulator copyright 1991-2026
+Contains Synopsys proprietary information.
+Compiler version Y-2026.03-SP1_Full64; Runtime version Y-2026.03-SP1_Full64;  Oct 25 22:31 2026
+UVM_INFO /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/base/uvm_root.svh(407) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+VCD+ Writer Y-2026.03-SP1_Full64 Copyright (c) 1991-2026 by Synopsys Inc.
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `init_control_status` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1396) @ 0: reporter [RegModel] No backdoor access available for field 'reg_blk.init_control_status.control' . Using frontdoor instead.
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 0: reporter [RegModel] Individual field access not available for field 'reg_blk.init_control_status.control'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(25) @ 85: reporter@@m_sequence [reg_file_sequence] Wrote init_control: e, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 85: reporter [RegModel] Individual field access not available for field 'reg_blk.init_control_status.control'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(29) @ 115: reporter@@m_sequence [reg_file_sequence] Read init_control: e, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 115: reporter [RegModel] Individual field access not available for field 'reg_blk.init_control_status.status'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(35) @ 145: reporter@@m_sequence [reg_file_sequence] Wrote init_status: b, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 145: reporter [RegModel] Individual field access not available for field 'reg_blk.init_control_status.status'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(39) @ 285: reporter@@m_sequence [reg_file_sequence] Read init_status: 2, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(44) @ 315: reporter@@m_sequence [reg_file_sequence] Wrote init_data: a0, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(49) @ 345: reporter@@m_sequence [reg_file_sequence] Read init_data: a0, Read init_status: 8, Read init_control: 0,  status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(52) @ 375: reporter@@m_sequence [reg_file_sequence] Read init_data: a0, Read init_status: b, Read init_control: 0,  status: UVM_IS_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `mode_control_status` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_INFO ../sequence/reg_file_sequence.sv(63) @ 405: reporter@@m_sequence [reg_file_sequence] Wrote mode_control register: bda1, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(66) @ 435: reporter@@m_sequence [reg_file_sequence] Read mode_data: bd, Read mode_status: 0, Read mode_control: 1,  status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(69) @ 465: reporter@@m_sequence [reg_file_sequence] Read mode_data: 0, Read mode_status: 0, Read mode_control: 0,  status: UVM_IS_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `interrupt_control` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_INFO ../sequence/reg_file_sequence.sv(81) @ 495: reporter@@m_sequence [reg_file_sequence] Wrote int_enable_ctrl: 3, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 495: reporter [RegModel] Individual field access not available for field 'reg_blk.interrupt_control.control'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(85) @ 525: reporter@@m_sequence [reg_file_sequence] Read int_enable_ctrl: 3, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(91) @ 555: reporter@@m_sequence [reg_file_sequence] Wrote int_status: 1, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 555: reporter [RegModel] Individual field access not available for field 'reg_blk.interrupt_control.status'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(95) @ 585: reporter@@m_sequence [reg_file_sequence] Read int_status: 0, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(101) @ 615: reporter@@m_sequence [reg_file_sequence] Wrote int_data: 5, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 615: reporter [RegModel] Individual field access not available for field 'reg_blk.interrupt_control.data'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(105) @ 645: reporter@@m_sequence [reg_file_sequence] Read int_data: 5, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(108) @ 675: reporter@@m_sequence [reg_file_sequence] Read int_enable_ctrl: 3, Read int_status: 0, Read int_data: 5,  status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(112) @ 705: reporter@@m_sequence [reg_file_sequence] Read int_enable_ctrl: 3, Read int_status: 0, Read int_data: 5,  status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(115) @ 735: reporter@@m_sequence [reg_file_sequence] Read int_enable_ctrl: 3, Read int_status: 0, Read int_data: 5,  status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(118) @ 765: reporter@@m_sequence [reg_file_sequence] Read int_enable_ctrl: 3, Read int_status: 0, Read int_data: 6,  status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(122) @ 795: reporter@@m_sequence [reg_file_sequence] Read int_enable_ctrl: 3, Read int_status: 0, Read int_data: 7,  status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(125) @ 825: reporter@@m_sequence [reg_file_sequence] Read int_enable_ctrl: 3, Read int_status: 0, Read int_data: 9,  status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(128) @ 855: reporter@@m_sequence [reg_file_sequence] Read int_enable_ctrl: 3, Read int_status: 0, Read int_data: a,  status: UVM_IS_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `power_control_status` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 855: reporter [RegModel] Individual field access not available for field 'reg_blk.power_control_status.control'. Accessing complete register instead.
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1707) @ 885: reporter [RegModel] Reading field 'reg_blk.power_control_status.control' will cause unintended side effects in adjoining Read-to-Clear or Read-to-Set fields in the same register
+UVM_INFO ../sequence/reg_file_sequence.sv(138) @ 885: reporter@@m_sequence [reg_file_sequence] Read power_ctrl: 5, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 885: reporter [RegModel] Individual field access not available for field 'reg_blk.power_control_status.control'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(143) @ 915: reporter@@m_sequence [reg_file_sequence] Wrote power_ctrl: 1111, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 915: reporter [RegModel] Individual field access not available for field 'reg_blk.power_control_status.control'. Accessing complete register instead.
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1707) @ 945: reporter [RegModel] Reading field 'reg_blk.power_control_status.control' will cause unintended side effects in adjoining Read-to-Clear or Read-to-Set fields in the same register
+UVM_INFO ../sequence/reg_file_sequence.sv(147) @ 945: reporter@@m_sequence [reg_file_sequence] Read power_ctrl: 0, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 945: reporter [RegModel] Individual field access not available for field 'reg_blk.power_control_status.status'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(152) @ 975: reporter@@m_sequence [reg_file_sequence] Wrote power_status: 1, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 975: reporter [RegModel] Individual field access not available for field 'reg_blk.power_control_status.status'. Accessing complete register instead.
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1707) @ 1005: reporter [RegModel] Reading field 'reg_blk.power_control_status.status' will cause unintended side effects in adjoining Read-to-Clear or Read-to-Set fields in the same register
+UVM_INFO ../sequence/reg_file_sequence.sv(156) @ 1005: reporter@@m_sequence [reg_file_sequence] Read power_status: 1, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 1005: reporter [RegModel] Individual field access not available for field 'reg_blk.power_control_status.data'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(161) @ 1035: reporter@@m_sequence [reg_file_sequence] Wrote power_data: 45, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 1035: reporter [RegModel] Individual field access not available for field 'reg_blk.power_control_status.data'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(165) @ 1065: reporter@@m_sequence [reg_file_sequence] Read power_data: 45, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(170) @ 1095: reporter@@m_sequence [reg_file_sequence] Read power_ctrl: 0, Read power_status: 1, Read power_data: 0, Read Counter: 0,  status: UVM_IS_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `reset_control_status` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 1095: reporter [RegModel] Individual field access not available for field 'reg_blk.reset_control_status.control'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(182) @ 1125: reporter@@m_sequence [reg_file_sequence] Read reset_ctrl: 5, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 1125: reporter [RegModel] Individual field access not available for field 'reg_blk.reset_control_status.control'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(187) @ 1155: reporter@@m_sequence [reg_file_sequence] Wrote reset_ctrl: 0, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 1155: reporter [RegModel] Individual field access not available for field 'reg_blk.reset_control_status.control'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(191) @ 1185: reporter@@m_sequence [reg_file_sequence] Read reset_ctrl: 0, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(197) @ 1215: reporter@@m_sequence [reg_file_sequence] Wrote reset_status: 5, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 1215: reporter [RegModel] Individual field access not available for field 'reg_blk.reset_control_status.status'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(201) @ 1245: reporter@@m_sequence [reg_file_sequence] Read reset_status: 0, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(207) @ 1275: reporter@@m_sequence [reg_file_sequence] Wrote reset_data: 1b, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 1275: reporter [RegModel] Individual field access not available for field 'reg_blk.reset_control_status.data'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(211) @ 1305: reporter@@m_sequence [reg_file_sequence] Read reset_data: 1b, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(215) @ 1335: reporter@@m_sequence [reg_file_sequence] Read reset_ctrl: 0, Read reset_status: 0, Read reset_data: 1b,  status: UVM_IS_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `transmit_control_status` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_INFO ../sequence/reg_file_sequence.sv(227) @ 1365: reporter@@m_sequence [reg_file_sequence] Wrote tx_ctrl: d, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 1365: reporter [RegModel] Individual field access not available for field 'reg_blk.transmit_control_status.control'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(231) @ 1395: reporter@@m_sequence [reg_file_sequence] Read tx_ctrl: d, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(237) @ 1425: reporter@@m_sequence [reg_file_sequence] Wrote tx_status: e, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 1425: reporter [RegModel] Individual field access not available for field 'reg_blk.transmit_control_status.status'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(241) @ 1455: reporter@@m_sequence [reg_file_sequence] Read tx_status: 0, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(247) @ 1485: reporter@@m_sequence [reg_file_sequence] Wrote tx_data: 59, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 1485: reporter [RegModel] Individual field access not available for field 'reg_blk.transmit_control_status.data'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(251) @ 1515: reporter@@m_sequence [reg_file_sequence] Read tx_data: 59, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(256) @ 1545: reporter@@m_sequence [reg_file_sequence] Read tx_ctrl: d, Read tx_status: 0, Read tx_data: 59,  status: UVM_IS_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `csr_reg` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_INFO ../sequence/reg_file_sequence.sv(270) @ 1575: reporter@@m_sequence [reg_file_sequence] Wrote csr_control: c, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 1575: reporter [RegModel] Individual field access not available for field 'reg_blk.csr_reg.control'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(274) @ 1605: reporter@@m_sequence [reg_file_sequence] Read csr_control: c, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(280) @ 1635: reporter@@m_sequence [reg_file_sequence] Wrote csr_status: f, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 1635: reporter [RegModel] Individual field access not available for field 'reg_blk.csr_reg.status'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(284) @ 1665: reporter@@m_sequence [reg_file_sequence] Read csr_status: 0, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(290) @ 1695: reporter@@m_sequence [reg_file_sequence] Wrote csr_data: e8, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 1695: reporter [RegModel] Individual field access not available for field 'reg_blk.csr_reg.data'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(294) @ 1725: reporter@@m_sequence [reg_file_sequence] Read csr_data: e8, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(297) @ 1755: reporter@@m_sequence [reg_file_sequence] Read csr_control: c, Read csr_status: 0, Read csr_data: e8,  status: UVM_IS_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `conf_reg` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_INFO ../sequence/reg_file_sequence.sv(310) @ 1785: reporter@@m_sequence [reg_file_sequence] Wrote conf_control: 5, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 1785: reporter [RegModel] Individual field access not available for field 'reg_blk.conf_reg.control'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(314) @ 1815: reporter@@m_sequence [reg_file_sequence] Read conf_control: 5, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(320) @ 1845: reporter@@m_sequence [reg_file_sequence] Wrote conf_status: 5, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 1845: reporter [RegModel] Individual field access not available for field 'reg_blk.conf_reg.status'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(324) @ 1875: reporter@@m_sequence [reg_file_sequence] Read conf_status: 0, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(330) @ 1905: reporter@@m_sequence [reg_file_sequence] Wrote conf_data: 42, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 1905: reporter [RegModel] Individual field access not available for field 'reg_blk.conf_reg.data'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(334) @ 1935: reporter@@m_sequence [reg_file_sequence] Read conf_data: 42, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(339) @ 1965: reporter@@m_sequence [reg_file_sequence] Read conf_control: 5, Read conf_status: 0, Read conf_data: 42,  status: UVM_IS_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `sys_stat_reg` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_INFO ../sequence/reg_file_sequence.sv(350) @ 1995: reporter@@m_sequence [reg_file_sequence] Wrote sys_stat_control: 8, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 1995: reporter [RegModel] Individual field access not available for field 'reg_blk.sys_stat_reg.control'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(354) @ 2025: reporter@@m_sequence [reg_file_sequence] Read sys_stat_control: 8, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(360) @ 2055: reporter@@m_sequence [reg_file_sequence] Wrote sys_stat_status: f, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 2055: reporter [RegModel] Individual field access not available for field 'reg_blk.sys_stat_reg.status'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(364) @ 2085: reporter@@m_sequence [reg_file_sequence] Read sys_stat_status: 0, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(370) @ 2115: reporter@@m_sequence [reg_file_sequence] Wrote sys_stat_data: ce, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 2115: reporter [RegModel] Individual field access not available for field 'reg_blk.sys_stat_reg.data'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(374) @ 2145: reporter@@m_sequence [reg_file_sequence] Read sys_stat_data: ce, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(379) @ 2175: reporter@@m_sequence [reg_file_sequence] Read sys_stat_control: 8, Read sys_stat_status: 0, Read sys_stat_data: ce,  status: UVM_IS_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `int_reg` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_INFO ../sequence/reg_file_sequence.sv(392) @ 2205: reporter@@m_sequence [reg_file_sequence] Wrote int_control: d, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 2205: reporter [RegModel] Individual field access not available for field 'reg_blk.int_reg.control'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(396) @ 2235: reporter@@m_sequence [reg_file_sequence] Read int_control: d, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(402) @ 2265: reporter@@m_sequence [reg_file_sequence] Wrote int_status: d, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 2265: reporter [RegModel] Individual field access not available for field 'reg_blk.int_reg.status'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(406) @ 2295: reporter@@m_sequence [reg_file_sequence] Read int_status: 0, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(412) @ 2325: reporter@@m_sequence [reg_file_sequence] Wrote int_data: c6, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 2325: reporter [RegModel] Individual field access not available for field 'reg_blk.int_reg.data'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(416) @ 2355: reporter@@m_sequence [reg_file_sequence] Read int_data: c6, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(420) @ 2385: reporter@@m_sequence [reg_file_sequence] Read int_control: d, Read int_status: 0, Read int_data: c6,  status: UVM_IS_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `cntrl_reg` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_INFO ../sequence/reg_file_sequence.sv(432) @ 2415: reporter@@m_sequence [reg_file_sequence] Wrote cntrl_control: 6, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 2415: reporter [RegModel] Individual field access not available for field 'reg_blk.cntrl_reg.control'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(436) @ 2445: reporter@@m_sequence [reg_file_sequence] Read cntrl_control: 6, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(442) @ 2475: reporter@@m_sequence [reg_file_sequence] Wrote cntrl_status: a, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 2475: reporter [RegModel] Individual field access not available for field 'reg_blk.cntrl_reg.status'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(446) @ 2505: reporter@@m_sequence [reg_file_sequence] Read cntrl_status: 0, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(453) @ 2535: reporter@@m_sequence [reg_file_sequence] Wrote cntrl_data: ab, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 2535: reporter [RegModel] Individual field access not available for field 'reg_blk.cntrl_reg.data'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(457) @ 2565: reporter@@m_sequence [reg_file_sequence] Read cntrl_data: ab, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(461) @ 2595: reporter@@m_sequence [reg_file_sequence] Read cntrl_control: 6, Read cntrl_status: 0, Read cntrl_data: ab,  status: UVM_IS_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `perf_reg` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_INFO ../sequence/reg_file_sequence.sv(473) @ 2625: reporter@@m_sequence [reg_file_sequence] Wrote perf_control: d, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 2625: reporter [RegModel] Individual field access not available for field 'reg_blk.perf_reg.control'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(477) @ 2655: reporter@@m_sequence [reg_file_sequence] Read perf_control: d, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(484) @ 2685: reporter@@m_sequence [reg_file_sequence] Wrote perf_status: 0, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 2685: reporter [RegModel] Individual field access not available for field 'reg_blk.perf_reg.status'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(488) @ 2715: reporter@@m_sequence [reg_file_sequence] Read perf_status: 0, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(494) @ 2745: reporter@@m_sequence [reg_file_sequence] Wrote perf_data: 70, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 2745: reporter [RegModel] Individual field access not available for field 'reg_blk.perf_reg.data'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(498) @ 2775: reporter@@m_sequence [reg_file_sequence] Read perf_data: 70, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(501) @ 2805: reporter@@m_sequence [reg_file_sequence] Read perf_control: d, Read perf_status: 0, Read perf_data: 70, status: UVM_IS_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `pm_reg` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_INFO ../sequence/reg_file_sequence.sv(513) @ 2835: reporter@@m_sequence [reg_file_sequence] Wrote pm_control: 8, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 2835: reporter [RegModel] Individual field access not available for field 'reg_blk.pm_reg.control'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(517) @ 2865: reporter@@m_sequence [reg_file_sequence] Read pm_control: 8, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(524) @ 2895: reporter@@m_sequence [reg_file_sequence] Wrote pm_status: 7, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 2895: reporter [RegModel] Individual field access not available for field 'reg_blk.pm_reg.status'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(528) @ 2925: reporter@@m_sequence [reg_file_sequence] Read pm_status: 0, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(534) @ 2955: reporter@@m_sequence [reg_file_sequence] Wrote pm_data: 1, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 2955: reporter [RegModel] Individual field access not available for field 'reg_blk.pm_reg.data'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(538) @ 2985: reporter@@m_sequence [reg_file_sequence] Read pm_data: 1, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(541) @ 3015: reporter@@m_sequence [reg_file_sequence] Read pm_control: 8, Read pm_status: 0, Read pm_data: 1, status: UVM_IS_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `dbg_reg` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_INFO ../sequence/reg_file_sequence.sv(553) @ 3045: reporter@@m_sequence [reg_file_sequence] Wrote dbg_control: f, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 3045: reporter [RegModel] Individual field access not available for field 'reg_blk.dbg_reg.control'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(557) @ 3075: reporter@@m_sequence [reg_file_sequence] Read dbg_control: f, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 3075: reporter [RegModel] Individual field access not available for field 'reg_blk.dbg_reg.status'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(561) @ 3105: reporter@@m_sequence [reg_file_sequence] Read dbg_status: 0, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(567) @ 3135: reporter@@m_sequence [reg_file_sequence] Wrote dbg_data: 69, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 3135: reporter [RegModel] Individual field access not available for field 'reg_blk.dbg_reg.data'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(571) @ 3165: reporter@@m_sequence [reg_file_sequence] Read dbg_data: 69, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(574) @ 3195: reporter@@m_sequence [reg_file_sequence] Read dbg_control: f, Read dbg_status: 0, Read dbg_data: 69, status: UVM_IS_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `err_reg` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_INFO ../sequence/reg_file_sequence.sv(587) @ 3225: reporter@@m_sequence [reg_file_sequence] Wrote err_control: f, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 3225: reporter [RegModel] Individual field access not available for field 'reg_blk.err_reg.control'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(591) @ 3255: reporter@@m_sequence [reg_file_sequence] Read err_control: f, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 3255: reporter [RegModel] Individual field access not available for field 'reg_blk.err_reg.status'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(595) @ 3285: reporter@@m_sequence [reg_file_sequence] Read err_status: 0, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(601) @ 3315: reporter@@m_sequence [reg_file_sequence] Wrote err_data: 7a, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 3315: reporter [RegModel] Individual field access not available for field 'reg_blk.err_reg.data'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(605) @ 3345: reporter@@m_sequence [reg_file_sequence] Read err_data: 7a, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(608) @ 3375: reporter@@m_sequence [reg_file_sequence] Read err_control: f, Read err_status: 0, Read err_data: 7a, status: UVM_IS_OK
+
+-----------------------------------------------------------------------------------------------------------------
+                      Sequence of Read/Write for `fifostatus` register fields
+-----------------------------------------------------------------------------------------------------------------
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 3375: reporter [RegModel] Individual field access not available for field 'reg_blk.fifostatus.empty'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(618) @ 3405: reporter@@m_sequence [reg_file_sequence] Read empty_flag: 0, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 3405: reporter [RegModel] Individual field access not available for field 'reg_blk.fifostatus.full'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(622) @ 3435: reporter@@m_sequence [reg_file_sequence] Read full_flag: 1, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 3435: reporter [RegModel] Individual field access not available for field 'reg_blk.fifostatus.valid_data'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(626) @ 3465: reporter@@m_sequence [reg_file_sequence] Read valid_data_flag: 0, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(632) @ 3495: reporter@@m_sequence [reg_file_sequence] Wrote fifo_data: 46b, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 3495: reporter [RegModel] Individual field access not available for field 'reg_blk.fifostatus.data'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(636) @ 3525: reporter@@m_sequence [reg_file_sequence] Read fifo_data: 46b, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(642) @ 3555: reporter@@m_sequence [reg_file_sequence] Wrote reserved: ca7d, status: UVM_IS_OK
+
+UVM_WARNING /opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/reg/uvm_reg_field.svh(1729) @ 3555: reporter [RegModel] Individual field access not available for field 'reg_blk.fifostatus.reserved'. Accessing complete register instead.
+UVM_INFO ../sequence/reg_file_sequence.sv(646) @ 3585: reporter@@m_sequence [reg_file_sequence] Read reserved: ca7d, status: UVM_IS_OK
+
+UVM_INFO ../sequence/reg_file_sequence.sv(650) @ 3615: reporter@@m_sequence [reg_file_sequence] Read empty_flag: 0, Read full_flag: 1, Read valid_data_flag: 0, Read fifo_data: 46b, Read reserved: ca7d, status: UVM_IS_OK
+
+$finish called from file "/opt/synopsys/vcs/Y-2026.03-SP1/etc/uvm-1.2/base/uvm_root.svh", line 532.
+$finish at simulation time                 3615
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 3615
+CPU Time:      0.420 seconds;       Data structure size:   0.6Mb
+Sun Oct 25 22:31:47 2026
