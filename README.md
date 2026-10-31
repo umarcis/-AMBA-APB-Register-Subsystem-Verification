@@ -19,7 +19,6 @@ The project follows the complete register-access path: a register sequence reque
 - Investigation of transfers with and without inserted wait states, readiness timeout handling, and reset during register traffic.
 - Development waveform analysis in QuestaSim and command-line scenario runs in Synopsys VCS.
 
-Coverage measurement is outside the scope of this project.
 
 ## Architecture
 
