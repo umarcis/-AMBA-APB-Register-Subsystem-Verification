@@ -22,9 +22,9 @@ class reg_file_monitor extends uvm_monitor;
 
   virtual task run_phase(uvm_phase phase);
     forever begin
-      // Wait for APB transaction (PSEL and PENABLE both asserted and PRESETn de-asserted)
+      // Wait for APB transaction (PSEL and PENABLE both asserted and PRESETn asserted)
       @(posedge vif.PCLK);
-      if (vif.PSEL && vif.PENABLE && ~vif.PRESETn) begin
+      if (vif.PSEL && vif.PENABLE && vif.PRESETn) begin
         // Create a sequence item to store the transaction details
         reg_file_sequence_item item;
         item = reg_file_sequence_item::type_id::create("item", this);

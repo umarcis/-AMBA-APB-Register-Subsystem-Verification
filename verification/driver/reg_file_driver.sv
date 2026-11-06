@@ -36,8 +36,8 @@ class reg_file_driver extends uvm_driver #(reg_file_sequence_item);
   endtask
 
   task drive_apb_transaction(reg_file_sequence_item item);
-    // Wait for reset to be deasserted before starting the transaction
-    while (vif.PRESETn) begin
+    // Wait for reset to be asserted before starting the transaction
+    while (vif.PRESETn !== 1'b1) begin
       @(posedge vif.PCLK);
     end
 

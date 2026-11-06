@@ -16,7 +16,7 @@ module apb_slave #(parameter DELAY_CYCLES = 1  // Default value, can be overridd
 
   // Wait states counter logic
   always_ff @(posedge PCLK) begin
-    if (PRESETn) begin
+    if (!PRESETn) begin
       wait_states <= 0;  
     end else if (!PENABLE) begin
       wait_states <= 0;  // Reset wait states if PENABLE is low

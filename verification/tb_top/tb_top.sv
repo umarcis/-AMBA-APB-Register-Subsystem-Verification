@@ -37,9 +37,9 @@ module tb_top ();
 
   // Reset generation
   initial begin
-    vif.PRESETn = 1;  // Assert reset high
+    vif.PRESETn = 0;  // Assert reset low
     repeat (6) @(posedge vif.PCLK);
-    vif.PRESETn = 0;  // Deassert reset
+    vif.PRESETn = 1;  // Deassert reset
   end
 
 
@@ -73,9 +73,9 @@ module tb_top ();
     // SCENARIO 5: PRESETn asserted for some clock cycles and de-asserted
     else if ($test$plusargs("RESET_TOGGLE")) begin
       repeat (16) @(posedge vif.PCLK);
-      vif.PRESETn = 1;
-      repeat (10) @(posedge vif.PCLK);
       vif.PRESETn = 0;
+      repeat (10) @(posedge vif.PCLK);
+      vif.PRESETn = 1;
     end
     else begin
       $display("No valid SCENARIO found in plusargs.");

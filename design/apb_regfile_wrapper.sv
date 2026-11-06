@@ -24,6 +24,7 @@ module apb_regfile_wrapper #(parameter DELAY_CYCLES = 1) (
   logic       start_increment;
   logic       interrupt_data_we;
   logic [7:0] interrupt_data_next;
+  logic regfile_reset;
 
   // Preserve the existing testbench's ACTIVE-HIGH reset convention,
   // despite the PRESETn signal name. APB timing is unchanged in this fix.
@@ -42,7 +43,7 @@ module apb_regfile_wrapper #(parameter DELAY_CYCLES = 1) (
 
   expanded_regfile expanded_regfile_inst (
     .clk                  (PCLK),
-    .rst                  (PRESETn),
+    .rst                  regfile_reset),
     .s_cpuif_req          (PSEL && PENABLE),
     .s_cpuif_req_is_wr    (PWRITE),
     // Explicit slice preserves the original six-bit address truncation.
@@ -60,8 +61,11 @@ module apb_regfile_wrapper #(parameter DELAY_CYCLES = 1) (
     .hwif_in              (hwif_in)
   );
 
+  // PRESETn is active-low; the generated register block's rst input is active-high.
+  assign regfile_reset = ~PRESETn;
+
   always_ff @(posedge PCLK) begin
-    if (PRESETn)
+    if (!PRESETn)
       counter <= 5'd0;
     else if (counter < 5'd31)
       counter <= counter + 5'd1;
@@ -72,7 +76,7 @@ module apb_regfile_wrapper #(parameter DELAY_CYCLES = 1) (
   // Store interrupt hardware-update state in separate registers.
   // Reset is the only initializer, and it has priority over incrementing.
   always_ff @(posedge PCLK) begin
-    if (PRESETn) begin
+    if (!PRESETn) begin
       counter_delay      <= 5'd0;
       start_increment    <= 1'b0;
       interrupt_data_we  <= 1'b0;
